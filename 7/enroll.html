@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="media/images/logo.jpg" alt="Logo" />
+    </header>
+
+    <nav><a href="index.html">Home</a></nav>
+
+    <main>
+      <form action="">
+        <table>
+          <tr>
+            <td>
+              <label for="firstname">First Name</label>
+            </td>
+            <td><input type="text" name="firstname" id="firstname" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="lastname">Last Name</label>
+            </td>
+            <td><input type="text" name="lastname" id="lastname" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email</label>
+            </td>
+            <td><input type="email" name="email" id="email" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="phone">Phone</label>
+            </td>
+            <td><input type="tel" name="phone" id="phone" /></td>
+          </tr>
+        </table>
+
+        <table id="enrollprice">
+          <caption>
+            Enroll
+          </caption>
+          <tr>
+            <td>Adult</td>
+            <td>$50</td>
+            <td><input type="radio" name="course" value="50" id="adult" /></td>
+          </tr>
+          <tr>
+            <td>Teen</td>
+            <td>$100</td>
+            <td><input type="radio" name="course" value="100" id="teen" /></td>
+          </tr>
+          <tr>
+            <td>Child</td>
+            <td>$150</td>
+            <td><input type="radio" name="course" value="150" id="child" /></td>
+          </tr>
+
+          <tr>
+            <td>Uniforms</td>
+            <td>$50</td>
+            <td>
+              <input
+                type="number"
+                name="uniforms"
+                id="uniforms"
+                min="0"
+                value="0"
+              />
+            </td>
+          </tr>
+        </table>
+
+        <input type="submit" value="Submit" id="submit" /><br />
+        <input type="reset" value="Reset" id="reset" /><br />
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+header img {
+  width: 520px;
+  height: 300px;
+}
+
+.schedule {
+  border: 0.1em solid black;
+}
+
+.schedule caption {
+  border: 0.1em solid black;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.schedule td,
+.schedule th {
+  border: 0.1em solid black;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.schedule th {
+  background-color: black;
+}
+
+#enrollprice {
+  border: 0.1em solid black;
+}
+
+#enrollprice td {
+  border: 0.1em solid black;
+  padding: 0.5em;
+  text-align: center;
+}
