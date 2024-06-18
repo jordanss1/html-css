@@ -5,6 +5,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript">
+      const calculate = () => {
+        let course = 0;
+        let uniforms = 0;
+        let total = 0;
+
+        if (document.getElementById("adult").checked === true) {
+          course = 50;
+        } else if (document.getElementById("teen").checked === true) {
+          course = 100;
+        } else if (document.getElementById("child").checked === true) {
+          course = 150;
+        }
+
+        uniforms = document.getElementById("uniforms").value * 50;
+
+        total = course + uniforms;
+
+        alert(`Your total cost is $${total}`);
+      };
+    </script>
   </head>
 
   <body>
@@ -78,7 +99,12 @@
           </tr>
         </table>
 
-        <input type="submit" value="Submit" id="submit" /><br />
+        <input
+          type="submit"
+          onclick="calculate()"
+          value="Submit"
+          id="submit"
+        /><br />
         <input type="reset" value="Reset" id="reset" /><br />
       </form>
     </main>
