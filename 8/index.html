@@ -4,10 +4,21 @@
     <title>My Web Page</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-      const myFunc = () => {
-        document.getElementById("demo").innerHTML = "Changed";
-      };
+      $(document).ready(() => {
+        $("#btn1").click(() => alert(`Text: ${$("#test").text()}`));
+
+        $("#btn2").click(() => alert(`HTML: ${$("#test").html()}`));
+
+        $("#btn3").click(() => $("#test2").text("Hello"));
+
+        $("#btn4").click(() => $("#test3").html("<b>Hello</b>"));
+
+        $("#btn5").click(() => $("#test4").val("Changed"));
+
+        $("p").css("background", "red");
+      });
     </script>
   </head>
 
@@ -16,9 +27,38 @@
 
     <main>
       <h1>My Web Page</h1>
-      <p id="demo">Paragraph</p>
+      <p id="demo">Paragraph 1</p>
 
-      <button type="button" onclick="newFunction()">Change Paragraph</button>
+      <button type="button" onclick="newFunction1()">Change Heading</button>
+
+      <h2 id="first_h2">Colors</h2>
+      <li>
+        <ul>
+          Red
+        </ul>
+        <ul>
+          Green
+        </ul>
+        <ul>
+          Blue
+        </ul>
+      </li>
+
+      <p id="test">This some <b>bold</b> text for test</p>
+
+      <button type="button" id="btn1">Show Text</button>
+      <button type="button" id="btn2">Show HTML</button>
+
+      <p id="demo2">Paragraph 2</p>
+
+      <p id="test2">This is test 2</p>
+      <p id="test3">This is test 3</p>
+
+      <p>Text input: <input type="text" value="Code" id="test4" /></p>
+
+      <button type="button" id="btn3">Set Text</button>
+      <button type="button" id="btn4">Set HTML</button>
+      <button type="button" id="btn5">Set Value</button>
     </main>
 
     <footer></footer>
